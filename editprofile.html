@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            font-family: 'Kanit', sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(to right, #343a40, #212529);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand:hover {
+            color: #f8f9fa;
+            text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-item a:hover {
+            color: #f8f9fa;
+            border-radius: 15px;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(209, 204, 207, 0.1);
+        }
+        footer a:hover {
+            color: #007bff;
+        }
+
+        i:hover {
+            transform: scale(1.35);
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2" href="#">Register and Profile Editing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  fs-5" href="index.html">ลงทะเบียนสมาชิก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  fs-5" href="profile.html">แสดงข้อมูลสมาชิก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  fs-5" href="editprofile.html">แก้ไขข้อมูลสมาชิก</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" id="edit-profile">
+        <h2>แก้ไขข้อมูลสมาชิก</h2>
+        <form>
+            <div class="mb-3">
+                <label for="edit-name" class="form-label">ชื่อ</label>
+                <input type="text" class="form-control" id="edit-name" value="ตัวอย่าง">
+            </div>
+            <div class="mb-3">
+                <label for="edit-email" class="form-label">อีเมล</label>
+                <input type="email" class="form-control" id="edit-email" value="example@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="edit-phone" class="form-label">เบอร์โทรศัพท์</label>
+                <input type="text" class="form-control" id="edit-phone" value="0123456789">
+            </div>
+            <button type="submit" class="btn btn-success" onclick="alert('completed...')">บันทึกข้อมูล</button>
+        </form>
+    </div>
+    <footer class="bg-dark p-3 mt-auto text-center">
+        <p class="text-white">Register and Profile Editing</p>
+        <p>
+            <a href="#"><i class="fab fa-facebook-f p-3"></i></a>
+            <a href="#"><i class="fab fa-twitter p-3"></i></a>
+            <a href="#"><i class="fab fa-instagram p-3"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
